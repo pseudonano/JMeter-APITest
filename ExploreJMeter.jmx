@@ -57,9 +57,13 @@
             <stringProp name="script">import java.nio.file.Files
 import java.nio.file.Paths
 import java.nio.charset.StandardCharsets
+import org.apache.jmeter.services.FileServer
 
 // Folder to save files (absolute or relative to JMeter&apos;s /bin)
 def folder = &quot;/Users/tegpam/Projects/JMeter-Projects/JMeter-APITest/log&quot;
+
+//def userDir = System.getProperty(&quot;user.dir&quot;);
+//log.info(&quot;JVM User Directory: &quot; + userDir);
 
 // Ensure folder exists
 def dir = new File(folder)
